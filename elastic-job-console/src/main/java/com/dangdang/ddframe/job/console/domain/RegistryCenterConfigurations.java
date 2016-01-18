@@ -32,20 +32,4 @@ import lombok.Getter;
 public final class RegistryCenterConfigurations {
     
     private Set<RegistryCenterConfiguration> registryCenterConfiguration = new LinkedHashSet<>();
-
-	/**
-	 * @return the registryCenterConfiguration
-	 */
-	public Set<RegistryCenterConfiguration> getRegistryCenterConfiguration() {
-		return registryCenterConfiguration;
-	}
-
-	/**
-	 * @param registryCenterConfiguration the registryCenterConfiguration to set
-	 */
-	public void setRegistryCenterConfiguration(Set<RegistryCenterConfiguration> registryCenterConfiguration) {
-		this.registryCenterConfiguration = registryCenterConfiguration;
-	}
-    
-    
 }

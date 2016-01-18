@@ -38,54 +38,7 @@ public final class RegistryCenterClient implements Serializable {
     
     private boolean connected;
     
-    public RegistryCenterClient() {
-    }
-    
     public RegistryCenterClient(final String name) {
         this.name = name;
     }
-
-	/**
-	 * @return the name
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * @param name the name to set
-	 */
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	/**
-	 * @return the curatorClient
-	 */
-	public CuratorFramework getCuratorClient() {
-		return curatorClient;
-	}
-
-	/**
-	 * @param curatorClient the curatorClient to set
-	 */
-	public void setCuratorClient(CuratorFramework curatorClient) {
-		this.curatorClient = curatorClient;
-	}
-
-	/**
-	 * @return the connected
-	 */
-	public boolean isConnected() {
-		return connected;
-	}
-
-	/**
-	 * @param connected the connected to set
-	 */
-	public void setConnected(boolean connected) {
-		this.connected = connected;
-	}
-    
-    
 }
