@@ -33,9 +33,12 @@ import javax.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 
 import org.apache.commons.codec.binary.Base64;
+import org.apache.log4j.Logger;
 
 @Slf4j
 public final class WwwAuthFilter implements Filter {
+	
+	Logger log = Logger.getLogger(WwwAuthFilter.class);
     
     private static final String AUTH_PREFIX = "Basic ";
     

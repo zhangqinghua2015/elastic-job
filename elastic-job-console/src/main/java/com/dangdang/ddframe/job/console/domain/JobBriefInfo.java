@@ -63,4 +63,62 @@ public final class JobBriefInfo implements Serializable, Comparable<JobBriefInfo
             return JobStatus.OK;
         }
     }
+
+	/**
+	 * @return the jobName
+	 */
+	public String getJobName() {
+		return jobName;
+	}
+
+	/**
+	 * @param jobName the jobName to set
+	 */
+	public void setJobName(String jobName) {
+		this.jobName = jobName;
+	}
+
+	/**
+	 * @return the status
+	 */
+	public JobStatus getStatus() {
+		return status;
+	}
+
+	/**
+	 * @param status the status to set
+	 */
+	public void setStatus(JobStatus status) {
+		this.status = status;
+	}
+
+	/**
+	 * @return the description
+	 */
+	public String getDescription() {
+		return description;
+	}
+
+	/**
+	 * @param description the description to set
+	 */
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	/**
+	 * @return the cron
+	 */
+	public String getCron() {
+		return cron;
+	}
+
+	/**
+	 * @param cron the cron to set
+	 */
+	public void setCron(String cron) {
+		this.cron = cron;
+	}
+    
+    
 }

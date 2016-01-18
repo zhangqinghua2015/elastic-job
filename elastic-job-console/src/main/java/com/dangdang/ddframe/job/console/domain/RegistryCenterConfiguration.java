@@ -54,7 +54,82 @@ public class RegistryCenterConfiguration implements Serializable {
     @XmlAttribute
     private boolean activated;
     
+    public RegistryCenterConfiguration() {
+    }
+    
     public RegistryCenterConfiguration(final String name) {
         this.name = name;
     }
+
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	/**
+	 * @return the zkAddressList
+	 */
+	public String getZkAddressList() {
+		return zkAddressList;
+	}
+
+	/**
+	 * @param zkAddressList the zkAddressList to set
+	 */
+	public void setZkAddressList(String zkAddressList) {
+		this.zkAddressList = zkAddressList;
+	}
+
+	/**
+	 * @return the namespace
+	 */
+	public String getNamespace() {
+		return namespace;
+	}
+
+	/**
+	 * @param namespace the namespace to set
+	 */
+	public void setNamespace(String namespace) {
+		this.namespace = namespace;
+	}
+
+	/**
+	 * @return the digest
+	 */
+	public String getDigest() {
+		return digest;
+	}
+
+	/**
+	 * @param digest the digest to set
+	 */
+	public void setDigest(String digest) {
+		this.digest = digest;
+	}
+
+	/**
+	 * @return the activated
+	 */
+	public boolean isActivated() {
+		return activated;
+	}
+
+	/**
+	 * @param activated the activated to set
+	 */
+	public void setActivated(boolean activated) {
+		this.activated = activated;
+	}
+    
+    
 }

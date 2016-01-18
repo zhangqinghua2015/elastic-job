@@ -44,4 +44,48 @@ public final class ServerBriefInfo implements Serializable, Comparable<ServerBri
         PARTIAL_ALIVE, 
         ALL_CRASHED
     }
+
+	/**
+	 * @return the serverIp
+	 */
+	public String getServerIp() {
+		return serverIp;
+	}
+
+	/**
+	 * @param serverIp the serverIp to set
+	 */
+	public void setServerIp(String serverIp) {
+		this.serverIp = serverIp;
+	}
+
+	/**
+	 * @return the serverHostName
+	 */
+	public String getServerHostName() {
+		return serverHostName;
+	}
+
+	/**
+	 * @param serverHostName the serverHostName to set
+	 */
+	public void setServerHostName(String serverHostName) {
+		this.serverHostName = serverHostName;
+	}
+
+	/**
+	 * @return the status
+	 */
+	public ServerBriefStatus getStatus() {
+		return status;
+	}
+
+	/**
+	 * @param status the status to set
+	 */
+	public void setStatus(ServerBriefStatus status) {
+		this.status = status;
+	}
+    
+    
 }
